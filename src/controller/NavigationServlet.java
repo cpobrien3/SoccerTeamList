@@ -11,6 +11,12 @@ import javax.servlet.http.HttpServletResponse;
 import model.SoccerTeam;
 
 /**
+ * @author Christian O'Brien - cpobrien3
+ * CIS175 - Fall 2021
+ * Sep 29, 2021
+ */
+
+/**
  * Servlet implementation class NavigationServlet
  */
 @WebServlet("/navigationServlet")
@@ -54,7 +60,7 @@ public class NavigationServlet extends HttpServlet {
 		} else if (act.equals("edit")) {
 			Integer tempId = Integer.parseInt(request.getParameter("id"));
 			SoccerTeam teamToEdit = dao.searchForItemById(tempId);
-			request.setAttribute("itemToEdit", teamToEdit);
+			request.setAttribute("teamToEdit", teamToEdit);
 			path = "/edit-team.jsp";
 		} else if (act.equals("add")) {
 		path = "/index.html";

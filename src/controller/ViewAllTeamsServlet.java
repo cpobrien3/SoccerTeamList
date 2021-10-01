@@ -8,6 +8,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
+ * @author Christian O'Brien - cpobrien3
+ * CIS175 - Fall 2021
+ * Sep 29, 2021
+ */
+
+/**
  * Servlet implementation class ViewAllTeamsServlet
  */
 @WebServlet("/viewAllTeamsServlet")

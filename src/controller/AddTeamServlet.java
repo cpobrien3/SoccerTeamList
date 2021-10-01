@@ -9,6 +9,13 @@ import javax.servlet.http.HttpServletResponse;
 import model.SoccerTeam;
 
 /**
+ * @author Christian O'Brien - cpobrien3
+ * CIS175 - Fall 2021
+ * Sep 29, 2021
+ */
+
+
+/**
  * Servlet implementation class AddTeamServlet
  */
 @WebServlet("/addTeamServlet")

@@ -10,6 +10,12 @@ import javax.servlet.http.HttpServletResponse;
 import model.SoccerTeam;
 
 /**
+ * @author Christian O'Brien - cpobrien3
+ * CIS175 - Fall 2021
+ * Sep 29, 2021
+ */
+
+/**
  * Servlet implementation class EditTeamServlet
  */
 @WebServlet("/editTeamServlet")
@@ -43,7 +49,7 @@ public class EditTeamServlet extends HttpServlet {
 		teamToUpdate.setCountry(country);
 		
 		dao.updateItem(teamToUpdate);
-		getServletContext().getRequestDispatcher("/viewAllItemsServlet").forward(request, response);
+		getServletContext().getRequestDispatcher("/viewAllTeamsServlet").forward(request, response);
 	}
 
 }
