@@ -8,6 +8,7 @@
 <title>Edit Team</title>
 </head>
 <body>
+<h1>Edit a Team</h1>
 <form action = "editTeamServlet" method="post">
 Club : <input type ="text" name = "club" value= "${teamToEdit.clubName}">
 League: <input type = "text" name = "league" value= "${teamToEdit.league}">

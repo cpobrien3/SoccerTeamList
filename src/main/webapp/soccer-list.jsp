@@ -8,6 +8,7 @@
 <title>List</title>
 </head>
 <body>
+<h1>View all Teams</h1>
 <form method = "post" action = "navigationServlet">
 <table>
 <c:forEach items="${requestScope.allTeams}" var="currentteam">
