@@ -1,4 +1,4 @@
 # SoccerTeamList
-This project was created to demonstrate my understanding of JPA. For this project, I created a SoccerTeam object that had the properties clubName, league, city, and country. 
-I then added annotations and inputs into the class to make an entity class that can work with Persistence. Using this class, I created a console-based program that allows entities
-to be created, edited, and deleted from a database.
+This project was created to demonstrate my understanding of using JPA, JSPs, and servlets. For this project, I used my SoccerTeam and SoccerTeamHelper classes that utilized JPA. After converting that project into a dynamic web project, I created and utilized servlets and JSPs to allow a user to add, edit, delete, or view soccer teams.
+
+
