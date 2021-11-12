@@ -1,4 +1,2 @@
 # SoccerTeamList
-This project was created to demonstrate my understanding of using JPA, JSPs, and servlets. For this project, I used my SoccerTeam and SoccerTeamHelper classes that utilized JPA. After converting that project into a dynamic web project, I created and utilized servlets and JSPs to allow a user to add, edit, delete, or view soccer teams.
-
-
+This project was created to demonstrate my understanding of using JPA joins. For this project, I created a division entity that has a ManyToOne relationship with my soccer team entity. I then created servlets and JSPs that allows a user to create a new division with teams, view the divisions from a list, and delete a division from a list. 
