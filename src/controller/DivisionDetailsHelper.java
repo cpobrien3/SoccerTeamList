@@ -50,7 +50,7 @@ public class DivisionDetailsHelper {
 		}
 	
 	
-		public DivisionDetails searchForListDetailsById(Integer tempId) {
+	public DivisionDetails searchForListDetailsById(Integer tempId) {
 			EntityManager em = emfactory.createEntityManager();
 			em.getTransaction().begin();
 			DivisionDetails found = em.find(DivisionDetails.class, tempId);

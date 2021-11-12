@@ -35,6 +35,7 @@ public class EditTeamServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		SoccerTeamHelper dao = new SoccerTeamHelper();
 		String name = request.getParameter("club");
 		String league = request.getParameter("league");

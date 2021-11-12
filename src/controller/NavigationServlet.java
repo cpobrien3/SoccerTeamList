@@ -54,7 +54,7 @@ public class NavigationServlet extends HttpServlet {
 				SoccerTeam teamToDelete = dao.searchForItemById(tempId);
 				dao.deleteTeam(teamToDelete);
 			}  catch (NumberFormatException e) {
-				System.out.println("Forgot to select an item");
+				System.out.println("Forgot to select a team");
 			} 
 			
 		} else if (act.equals("edit")) {

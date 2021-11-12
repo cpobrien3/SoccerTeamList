@@ -4,9 +4,67 @@
 <meta charset="ISO-8859-1">
 <title>Add Team</title>
 </head>
+<script>
+
+function validate() {
+	   if( myForm.club.value == "" ) {
+        alert( "Input is empty. Please provide the club name!" );
+        myForm.club.focus() ;
+        return false;
+       }
+      
+	  
+	   if( myForm.league.value == "" ) {
+	        alert( "Input is empty. Please provide the league name!" );
+	        myForm.league.focus() ;
+	        return false;
+	     }
+	   
+	   if( myForm.city.value == "" ) {
+	        alert( "Input is empty. Please provide the city name!" );
+	        myForm.city.focus() ;
+	        return false;
+	     }
+	   
+	   if( myForm.country.value == "" ) {
+	        alert( "Input is empty. Please provide the country name!" );
+	        myForm.country.focus() ;
+	        return false;
+	     }
+	   
+	   var re = /^[\w ]+$/;
+	   
+	   if(!re.test(myForm.club.value)) {
+		      alert("Error: Club input contains invalid characters!");
+		      myForm.club.focus() ;
+		      return false;
+		}
+	   
+	   if(!re.test(myForm.league.value)) {
+		      alert("Error: League input contains invalid characters!");
+		      myForm.league.focus() ;
+		      return false;
+		}
+	   
+	   if(!re.test(myForm.city.value)) {
+		      alert("Error: City input contains invalid characters!");
+		      myForm.city.focus() ;
+		      return false;
+		}
+	   
+	   if(!re.test(myForm.country.value)) {
+		      alert("Error: Country input contains invalid characters!");
+		      myForm.country.focus() ;
+		      return false;
+		}
+	   return( true);
+   }
+
+
+</script>
 <body>
 <h1>Add a New Team</h1>
-<form action = "addTeamServlet" method="post">
+<form action = "addTeamServlet" method="post" name= "myForm" onsubmit =  "return(validate());">
 Club: <input type ="text" name = "club">
 League: <input type = "text" name = "league">
 City:  <input type ="text" name = "city">
